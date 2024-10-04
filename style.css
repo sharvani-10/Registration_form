@@ -1,0 +1,103 @@
+body {
+    background-color: #673AB7;
+    font-family: sans-serif;
+}
+h1{
+    color: #fff;
+}
+
+form {
+    width: 500px;
+    margin: 8% auto;
+    padding: 50px 0;
+    box-shadow: 0 20px 40px rgb(0, 0, 0);
+    position:relative;
+    text-align:center;
+}
+
+.img-container{
+    position:absolute;
+    top:-50px;
+    left:50%;
+    transform:translatex(-50%);
+}
+
+.input-box {
+    margin: 30px auto;
+    width: 80%;
+    position: relative;
+    box-shadow: 0 8px 10px -10px rgb(0, 0, 0);
+}
+
+.input-box input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #efefef;
+    padding-left: 50px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #4CAF50, #00BCD4);
+}
+
+span i {
+    color: #fff;
+}
+
+/* Button Styles */
+button {
+    width: 130px;
+    height: 40px;
+    margin-left: 10%;
+    display: block;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    outline: none;
+    background: linear-gradient(to right, #4CAF50, #00BCD4);
+    box-shadow: 0 8px 10px -10px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+button i {
+    margin-right: 10px;
+}
+
+.img-container {
+    margin-bottom: 20px;
+}
+
+form img {
+    width: 100px; 
+    display: block;
+}
+.strength-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #ddd;
+    margin-top: 0px;
+    overflow: hidden;
+}
+
+.strength {
+    height: 100%;
+    width: 100%;
+    background-color: red; 
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Green color if password is at least 8 characters */
+input:valid ~ .strength-bar .strength {
+    background-color: green;
+}
